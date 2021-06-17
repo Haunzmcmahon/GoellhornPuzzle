@@ -1,0 +1,6 @@
+<div class="example-list" id="gameContainer">
+    <img class="example-box" *ngFor="let tile of tiles; index as i" #tile (click)="onClick($event)" id={{tile.id}} src={{tile.url}}>
+</div>
+<button mat-raised-button color="warn" (click)="restart()" disabled={{!win}}>
+Restart
+</button>

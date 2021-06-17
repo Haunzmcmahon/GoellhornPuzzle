@@ -1,0 +1,43 @@
+.example-list {
+   
+    width: 456px;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    justify-content: center;
+  }
+  
+  .example-box {
+    
+    border: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: move;
+    background: white;
+    font-size: 14px;
+    
+  }
+
+  .example-box:nth-child(3n){
+      color:red;
+      width:calc(100%/3);
+      flex-grow:0;
+      border: solid 1px #ccc;
+
+  }
+  .example-box:nth-child(3n).clicked{
+    border-color: green;
+  }
+  .clicked{
+    border-color: green;
+  }
+  
